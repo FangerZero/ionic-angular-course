@@ -11,11 +11,11 @@ const routes: Routes = [
                 path: 'discover',
                 children: [
                     {
-                        path: '', 
+                        path: '',
                         loadChildren: './discover/discover.module#DiscoverPageModule'
                     },
                     {
-                        path: ':placeId', 
+                        path: ':placeId',
                         loadChildren: './discover/place-detail/place-detail.module#PlaceDetailPageModule'
                     }
                 ]
