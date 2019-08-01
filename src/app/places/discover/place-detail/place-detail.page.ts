@@ -32,11 +32,12 @@ export class PlaceDetailPage implements OnInit {
     });
   }
 
-  onBookPlace() {
+  onBookPlace(mode: 'select' | 'random') {
+    console.log(mode);
     //this.router.navigateByUrl('/places/tabs/discover');
     // this.navCtrl.navigateBack('/places/tabs/discover');
     this.modalCtrl
-      .create({ component: CreatingBookingComponent, componentProps: { selectedPlace: this.place } })
+      .create({ component: CreatingBookingComponent, componentProps: { selectedPlace: this.place, selectedMode: mode } })
       .then(modelEl => {
         modelEl.present();
         return modelEl.onDidDismiss();

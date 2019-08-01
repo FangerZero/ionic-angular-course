@@ -12,25 +12,34 @@ export class PlacesService {
       'Meow Mix Mansion',
       'Beautiful mansion for cats!',
       'https://petco.scene7.com/is/image/PETCO/2915837-center-1?$ProductDetail-large$',
-      233.22),
-    new Place(
+      233,
+      new Date('2019-04-01'),
+      new Date('2019-10-01'),
+    ), new Place(
       'p2',
       'AGHHHH',
       'Sleepy mansion for cats!',
       'https://d3so8ydeu5zkl7.cloudfront.net/cdn/905963/media/catalog/product/cache/1/image/650x/040ec09b1e35df139433887a97daa66f/3/9/3995_2500x2500_300dpi.jpg',
-      123.22),
-      new Place(
+      123,
+      new Date('2019-04-01'),
+      new Date('2019-10-01'),
+    ), new Place(
         'p3',
         'AGHfasdfasdfHHH',
         'Sleepy asdfasdfasdfasdf for cats!',
         'https://petco.scene7.com/is/image/PETCO/2915837-center-1?$ProductDetail-large$',
-        43.22),
-      new Place(
-        'p3',
+        43,
+        new Date('2019-04-01'),
+        new Date('2019-10-01'),
+      ), new Place(
+        'p4',
         'Test Name',
-        'DESCRIPTION GOES HERE!!!',
+        'DESCRIPTION GOES HERE',
         'https://petco.scene7.com/is/image/PETCO/2915837-center-1?$ProductDetail-large$',
-        534.33)
+        534,
+        new Date('2019-04-01'),
+        new Date('2019-10-01'),
+      ),
   ];
 
   get places() {
